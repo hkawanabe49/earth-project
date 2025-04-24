@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Biodiversity & Climate Change</title>
-  <style>
-    /* Base resets */
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #F0FFF0;
-    }
-    nav {
-      position: fixed; top: 0; width: 100%;
-      background: rgba(255,255,255,0.9);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-      border-radius: 8px; /* Rounded corners */
-    }
-    nav ul {
-      display: flex; justify-content: center; list-style: none;
-    }
-    nav a {
-      display: block; padding: 1rem 1.5rem;
-      color: #2E7D32; text-decoration: none; font-weight: bold;
-    }
-    nav a:hover { color: #BF360C; }
-    footer {
-      text-align: center; padding: 1rem;
-      font-size: 0.9rem; background: #2E7D32; color: white;
-      border-radius: 8px; /* Rounded corners */
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Earth: Biodiversity & Climate</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="biodiversity.html">Biodiversity</a></li>
-      <li><a href="climate.html">Climate Change</a></li>
-      <li><a href="link.html">How They Affect Each Other</a></li>
-      <li><a href="takeaction.html">Take Action</a></li>
-    </ul>
-  </nav>
+
+  <!-- Navigation -->
+  <header>
+    <h1>Our Earth Initiative</h1>
+    <nav>
+      <ul>
+        <li><a href="biodiversity.html">Biodiversity</a></li>
+        <li><a href="climate.html">Climate Change</a></li>
+        <li><a href="link.html">Interconnection</a></li>
+        <li><a href="takeaction.html">Take Action</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Section 1 -->
+  <section class="hero">
+    <img src="images/biodiversity.jpg" alt="Lush forest representing biodiversity">
+    <h2>The Impacts of Climate Change on Biodiversity &amp; How Biodiversity Can Help Prevent It</h2>
+    <p>Biodiversity—the variety of life within ecosystems—plays a crucial role in regulating our planet’s climate. Rich, diverse habitats capture and store more carbon, stabilize weather patterns, and increase resilience to extreme events, helping to keep Earth’s temperature in check.</p>
+    <a class="btn" href="biodiversity.html">Learn More About Biodiversity</a>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="hero alt">
+    <img src="images/climate.jpg" alt="Dry cracked earth under a hot sun">
+    <h2>Climate Change: Rising Temperatures &amp; Escalating Disasters</h2>
+    <p>Climate change disrupts natural systems by driving up global temperatures and amplifying storms, droughts, and wildfires—threatening both human communities and wildlife across the globe.</p>
+    <a class="btn" href="climate.html">Learn More About Climate Change</a>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="hero">
+    <img src="images/interconnection.jpg" alt="Overlapping imagery of forest and heat map">
+    <h2>A Two-Way Street: How They Influence Each Other</h2>
+    <p>While robust biodiversity helps slow the advance of climate change, rising temperatures and extreme weather events driven by climate change, in turn, erode the very diversity we depend on—creating a dangerous feedback loop.</p>
+    <a class="btn" href="link.html">See the Interconnection</a>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    &copy; 2025 Your Organization. All rights reserved.
+    <p>&copy; 2025 Our Earth Initiative</p>
   </footer>
+
 </body>
 </html>
