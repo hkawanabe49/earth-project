@@ -1,62 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Biodiversity</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      color: #333;
-      background-color: #F0FFF0;
+      margin: 0;
+      padding: 0;
+      background-color: #f4fdf4;
     }
-    nav {
-      position: fixed; top: 0; width: 100%;
-      background: rgba(255,255,255,0.9);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-      border-radius: 8px; /* Rounded corners */
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
     }
-    nav ul {
-      display: flex; justify-content: center; list-style: none;
-    }
-    nav a {
-      display: block; padding: 1rem 1.5rem;
-      color: #2E7D32; text-decoration: none; font-weight: bold;
-    }
-    nav a:hover { color: #BF360C; }
     section {
-      padding: 100px 20px 60px; max-width: 800px; margin: 0 auto;
-      border-radius: 10px; /* Rounded corners */
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
-    section h2 { color: #2E7D32; }
-    footer {
-      text-align: center; padding: 1rem;
-      font-size: 0.9rem; background: #2E7D32; color: white;
-      border-radius: 8px; /* Rounded corners */
+    h2 {
+      color: #2e7d32;
+      margin-top: 2rem;
+    }
+    .intro {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="climate.html">Climate Change</a></li>
-      <li><a href="link.html">How They Affect Each Other</a></li>
-      <li><a href="takeaction.html">Take Action</a></li>
-    </ul>
-  </nav>
+  <header>
+    <h1>Biodiversity</h1>
+  </header>
 
   <section>
-    <h2>Biodiversity</h2>
-    <p>Biodiversity is the variety of species within an area. It was first used by Laura Tangley in 1985 in a report to the US Congress, declaring the need to conserve biodiversity.</p>
-  </section>
+    <p class="intro">Biodiversity is the variety of species within an area. It was first used by Laura Tangley in 1985 in a report to the US Congress, declaring the need to conserve biodiversity.</p>
 
-  <footer>
-    &copy; 2025 Your Organization. All rights reserved.
-  </footer>
+    <h2>The Main Types of Biodiversity</h2>
+    <p>Biodiversity can come in many different shapes and sizes. Genetic diversity is the diversity between species. This is like the various types of apples or the traits that make humans unique. Species diversity is the type of diversity that has to do with the many types of plants and animals on our planet. This type of biodiversity is going to be referenced as just "biodiversity" throughout this website. The last main type of biological diversity is ecosystem diversity, where the number of types of ecosystems within an area. The border between ecosystems is often hard to define, so this number is constantly fluctuating.</p>
+
+    <h2>Measuring Biodiversity</h2>
+    <p>When measuring the diversity of life, counting individuals is always handy. Using DNA samples, satellite images, and other technologies can help, but often just using a magnifying glass or just looking around can help define the diversity in an area.</p>
+
+    <h2>The Causes of Biodiversity and Biodiversity Loss</h2>
+    <p>The Amazon Rainforest is known for its lush, rich wildlife, and gets its biodiversity for 3 reasons. The first is the lack of nutrients in the soil. Though this may seem contradictory, the lack of nutrients gives slower-growing plants a chance. In richer soils, faster plants can suck up all of the resources and hog all of the sunlight, killing slower plants, which is why nutrient-rich soils have more life, but less variety of life. Harsh environments also stop biodiversity from growing because only a few species can live in extreme temperatures or places prone to natural disasters. Time is the last ingredient needed for a rich ecosystem. It allows animals and plants to branch off into new species, adapting in different ways.</p>
+
+    <h2>The Earth's Need for Biodiversity</h2>
+    <p>Biodiversity can help sustain life all around us. It gives us different varieties of food, which blooms at various times, giving us nutrients year-round. It also gives us the oxygen that we breathe, and the chemicals and medicines that we use daily. Different types of species like mangroves can protect land, purify water, keep the soil rich, and so much more.</p>
+
+    <h2>The Evolution of Biodiversity</h2>
+    <p>For as long as we've been recording, biodiversity has stayed the same, with little jumps every so often. But mass extinction set back our diverse ecosystems and almost reset life.</p>
+    <figure style="margin-top: 1rem;">
+  <img src="images/biodiversity_evolution_graph.jpg" alt="Graph showing biodiversity over time and mass extinction events" style="max-width:100%; border-radius: 12px;">
+  <figcaption style="font-style: italic; text-align: center; margin-top: 0.5rem;">Graph showing biodiversity trends and mass extinction impacts, source: National Geographic</figcaption>
+</figure>
+  </section>
 </body>
 </html>
