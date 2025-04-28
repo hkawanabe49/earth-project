@@ -1,62 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>How They Affect Each Other</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interconnection: How Biodiversity & Climate Change Affect Each Other</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
-      color: #333;
-      background-color: #F0FFF0;
+      margin: 0;
+      padding: 0;
+      background-color: #f4fdf4;
+      overflow-y: auto;
+      transition: background-color 1s ease, color 1s ease;
+    }
+    header {
+      background-color: #ff7043;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
     }
     nav {
-      position: fixed; top: 0; width: 100%;
-      background: rgba(255,255,255,0.9);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-      border-radius: 8px; /* Rounded corners */
-    }
-    nav ul {
-      display: flex; justify-content: center; list-style: none;
+      background-color: #fff3e0;
+      padding: 1rem;
+      text-align: center;
     }
     nav a {
-      display: block; padding: 1rem 1.5rem;
-      color: #2E7D32; text-decoration: none; font-weight: bold;
+      margin: 0 1rem;
+      color: #e65100;
+      text-decoration: none;
+      font-weight: bold;
     }
-    nav a:hover { color: #BF360C; }
     section {
-      padding: 100px 20px 60px; max-width: 800px; margin: 0 auto;
-      border-radius: 10px; /* Rounded corners */
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
-    section h2 { color: #2E7D32; }
-    footer {
-      text-align: center; padding: 1rem;
-      font-size: 0.9rem; background: #2E7D32; color: white;
-      border-radius: 8px; /* Rounded corners */
+    h2 {
+      color: #e65100;
+      margin-top: 2rem;
+    }
+    .intro {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+    .switch-section {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    #toggleButton {
+      background-color: #2e7d32;
+      color: white;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.5s ease;
+    }
+    #toggleButton:hover {
+      background-color: #1b5e20;
+    }
+    body.switching {
+      background-color: #c5e1a5;
+      color: #1b5e20;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 1rem;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      transition: all 0.5s ease;
+    }
+    .caption {
+      font-size: 0.8rem;
+      color: #555;
+      margin-top: 0.5rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>How Biodiversity & Climate Change Affect Each Other</h1>
+  </header>
+
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="biodiversity.html">Biodiversity</a></li>
-      <li><a href="climate.html">Climate Change</a></li>
-      <li><a href="takeaction.html">Take Action</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="biodiversity.html">Biodiversity</a>
+    <a href="climate.html">Climate Change</a>
+    <a href="link.html">Interconnection</a>
+    <a href="takeaction.html">Take Action</a>
   </nav>
 
   <section>
-    <h2>How They Affect Each Other</h2>
-    <p>Climate change and biodiversity loss are deeply intertwined. Rising temperatures, changing rainfall patterns, and extreme weather events are altering ecosystems, threatening the species that depend on them for survival.</p>
+    <!-- Flip Section -->
+    <div class="switch-section">
+      <button id="toggleButton">How Biodiversity Affects Climate Change</button>
+      <div id="contentArea">
+        <h2>How Biodiversity Affects Climate Change</h2>
+        <p>Biodiversity can serve as a natural carbon sink, storing carbon dioxide so it doesn't affect our climates. Peatlands, mangroves, and seagrasses are all great at taking greenhouse gases for a healthy planet, and sea life can intake 4 times as much carbon as land life. Though more diverse places are often more resilient when attacked by unnatural disasters, places known as tipping points can exponentially add to the carbon dioxide in the atmosphere. This happens when places like the Amazon rainforest intake too much carbon dioxide, and instead start producing carbon dioxide instead.</p>
+        <img src="biodiversityloss.jpg" alt="Biodiversity loss diagram">
+        <div class="caption">Impact of biodiversity conservation on ecosystem health. Source: UNEP, 2011.</div>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    &copy; 2025 Your Organization. All rights reserved.
-  </footer>
+  <script>
+    const toggleButton = document.getElementById('toggleButton');
+    const contentArea = document.getElementById('contentArea');
+
+    let showingClimateImpact = false;
+
+    toggleButton.addEventListener('click', () => {
+      if (showingClimateImpact) {
+        toggleButton.textContent = "How Biodiversity Affects Climate Change";
+        contentArea.innerHTML = `
+          <h2>How Biodiversity Affects Climate Change</h2>
+          <p>Biodiversity can serve as a natural carbon sink, storing carbon dioxide so it doesn't affect our climates. Peatlands, mangroves, and seagrasses are all great at taking greenhouse gases for a healthy planet, and sea life can intake 4 times as much carbon as land life. Though more diverse places are often more resilient when attacked by unnatural disasters, places known as tipping points can exponentially add to the carbon dioxide in the atmosphere. This happens when places like the Amazon rainforest intake too much carbon dioxide, and instead start producing carbon dioxide instead.</p>
+          <img src="biodiversityloss.jpg" alt="Biodiversity loss diagram">
+          <div class="caption">Impact of biodiversity conservation on ecosystem health. Source: UNEP, 2011.</div>
+        `;
+      } else {
+        toggleButton.textContent = "How Climate Change Affects Biodiversity";
+        contentArea.innerHTML = `
+          <h2>How Climate Change Affects Biodiversity</h2>
+          <p>Diverse ecosystems are threatened by global warming through the changes in habitat. Animals evolving over thousands of years often can't keep up with increasing heat, which can cause habitat loss by extreme natural disasters, and emigration to find cooler places. The greenhouse gases also affect soil and air quality, giving way to fewer species.</p>
+          <img src="tehs_a_1530054_f0001_b.gif" alt="Impact of climate change on biodiversity diagram">
+          <div class="caption">Impact of climate change on biodiversity and ecosystem services in Africa. Source: Taylor & Francis Online.</div>
+        `;
+      }
+      showingClimateImpact = !showingClimateImpact;
+      document.body.classList.toggle('switching');
+    });
+  </script>
 </body>
 </html>
