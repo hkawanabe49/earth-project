@@ -1,70 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Take Action</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      color: #333;
-      background-color: #F0FFF0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4fdf4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #388e3c;
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
     }
     nav {
-      position: fixed; top: 0; width: 100%;
-      background: rgba(255,255,255,0.9);
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      z-index: 1000;
-      border-radius: 8px; /* Rounded corners */
-    }
-    nav ul {
-      display: flex; justify-content: center; list-style: none;
+      background-color: #c8e6c9;
+      padding: 1rem;
+      text-align: center;
     }
     nav a {
-      display: block; padding: 1rem 1.5rem;
-      color: #2E7D32; text-decoration: none; font-weight: bold;
+      margin: 0 1rem;
+      color: #2e7d32;
+      text-decoration: none;
+      font-weight: bold;
     }
-    nav a:hover { color: #BF360C; }
     section {
-      padding: 100px 20px 60px; max-width: 800px; margin: 0 auto;
-      border-radius: 10px; /* Rounded corners */
+      padding: 2rem;
+      text-align: center;
     }
-    section h2 { color: #2E7D32; }
-    footer {
-      text-align: center; padding: 1rem;
-      font-size: 0.9rem; background: #2E7D32; color: white;
-      border-radius: 8px; /* Rounded corners */
+    .button {
+      display: inline-block;
+      margin: 1rem;
+      padding: 1rem 2rem;
+      font-size: 1.2rem;
+      color: white;
+      background-color: #4caf50;
+      border: none;
+      border-radius: 12px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #388e3c;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Take Action</h1>
+  </header>
+
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="biodiversity.html">Biodiversity</a></li>
-      <li><a href="climate.html">Climate Change</a></li>
-      <li><a href="link.html">How They Affect Each Other</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="biodiversity.html">Biodiversity</a>
+    <a href="climate.html">Climate Change</a>
+    <a href="link.html">Interconnection</a>
+    <a href="takeaction.html">Take Action</a>
+    <a href="bibliography.html">Bibliography</a>
   </nav>
 
   <section>
-    <h2>Take Action</h2>
-    <p>Every action counts! You can reduce your carbon footprint by using energy-efficient appliances, reducing waste, supporting sustainable brands, and educating others on climate and biodiversity issues.</p>
-    <h3>Places to Donate</h3>
-    <p>Your donations can make a difference. Here are some organizations that are working to combat climate change and protect biodiversity:</p>
-    <ul>
-      <li><a href="https://www.worldwildlife.org" target="_blank">World Wildlife Fund (WWF)</a></li>
-      <li><a href="https://www.nature.org" target="_blank">The Nature Conservancy</a></li>
-      <li><a href="https://www.greenpeace.org" target="_blank">Greenpeace</a></li>
-      <li><a href="https://www.climate.org" target="_blank">Climate Reality Project</a></li>
-    </ul>
+    <h2>Ways You Can Help from Home</h2>
+    <a href="https://www.earthday.org/" class="button" target="_blank">Earth Day Network</a>
+    <a href="https://www.rainforest-alliance.org/" class="button" target="_blank">Rainforest Alliance</a>
+    <a href="https://www.nature.org/en-us/" class="button" target="_blank">The Nature Conservancy</a>
+    <a href="https://www.worldwildlife.org/" class="button" target="_blank">World Wildlife Fund</a>
   </section>
-
-  <footer>
-    &copy; 2025 Your Organization. All rights reserved.
-  </footer>
 </body>
 </html>
